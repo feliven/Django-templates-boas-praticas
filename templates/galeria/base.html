@@ -13,11 +13,12 @@
   </head>
 
   <body>
-    <!-- prettier-ignore -->
     <div class="pagina-inicial">
-        {% include 'galeria/partials/_header.html' %}
-        {% block content %}{% endblock %}
-        {% include 'galeria/partials/_footer.html' %}
+      {% include 'galeria/partials/_header.html' %}
+      <main class="principal">
+        {% include 'galeria/partials/_menu-lateral.html' %} {% block content %}{% endblock %}
+      </main>
+      {% include 'galeria/partials/_footer.html' %}
     </div>
   </body>
 </html>
