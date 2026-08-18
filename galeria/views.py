@@ -4,4 +4,8 @@ from django.http import HttpRequest
 
 # Create your views here.
 def index(request: HttpRequest):
-    return render(request, "index.html")
+    return render(request, "galeria/index.html")
+
+
+def imagem(request: HttpRequest):
+    return render(request, "galeria/imagem.html")
